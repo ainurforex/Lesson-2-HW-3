@@ -1,13 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        byte bananWeightGr=80;
-        byte milkWeightGr=105;
-        byte plombirWeightGr=100;
-        byte eggWeightGr=70;
-        float breakfastTotalWeightGr;
+        int banan=5;
+        int bananWeightGr=80;
+        int milk=200/100;
+        int milkWeightGr=105;
+        int plombir=2;
+        int plombirWeightGr=100;
+        int egg=4;
+        int eggWeightGr=70;
+        int breakfastTotalWeightGr;
         float breakfastTotalWeightKg;
-        breakfastTotalWeightGr=(bananWeightGr*5)+(milkWeightGr*2)+(plombirWeightGr*2)+(eggWeightGr*4);
-        breakfastTotalWeightKg=breakfastTotalWeightGr/1000;
+        int grInKg=1000;
+        breakfastTotalWeightGr=(bananWeightGr*banan)+(milkWeightGr*milk)+(plombirWeightGr*plombir)+(eggWeightGr*egg);
+        breakfastTotalWeightKg=(float) breakfastTotalWeightGr/(float) grInKg;
         System.out.println("Общий вес завтрака- "+breakfastTotalWeightKg+" кг.");
     }
 }
